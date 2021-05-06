@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+.tbg .logo {
+    position: absolute;
+    left: 20%;
+    line-height: 90px;
+}
+
+.tbg .logo :first-child {
+    font-size: 40px;
+    font-weight: 700;
+    color: green;
+}
+
+.tbg .logo :last-child {
+    font-size: 35px;
+    font-weight: 700;
+    color: green;
+}
+
+.tbg .nav {
+    position: absolute;
+    left: 35%;
+}
+
+.tbg .nav ul li {
+    display: inline;
+    line-height: 105px;
+    margin: 25px;
+    padding-bottom: 23px;
+    font-weight: 700;
+}
+
+.tbg .nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #24354b;
+}
+
+.tbg .nav ul li a:hover {
+    color: red;
+}
+
+.tbg .nav ul li:nth-child(6) {
+    font-weight: 700;
+    border-bottom: 4px solid red;
+}
+
+.bd {
+    background-color: rgb(246, 246, 246);
+    position: relative;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+}
+
+.bd .ct {
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.bd .ct .nav {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    /* background-color: saddlebrown; */
+}
+
+.bd .ct .nav ul {
+    margin: 0 100px;
+}
+
+.bd .ct .nav ul li {
+    /* float: left; */
+    white-space: nowrap;
+    line-height: 50px;
+    display: inline;
+    font-size: 12px;
+    color: #24354b;
+}
+
+.bd .ct .b {
+    width: 1200px;
+    height: 950px;
+    position: relative;
+    top: 50px;
+}
+
+.bd .ct .b .nav2 ul li {
+    width: 200px;
+    height: 46px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 500;
+    color: block;
+    background-color: white;
+    list-style: none;
+}
+
+.bd .ct .b .nav2 ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.bd .ct .b .nav2 ul .pp li:nth-child(1) {
+    background-color: red;
+    color: white;
+}
+
+.bd .ct .b .rb {
+    width: 900px;
+    height: 950px;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    background-color: white;
+}
+
+.bd .ct .b .rb h2 {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #24354b;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    line-height: 35px;
+    border-bottom: red solid 3px;
+}
+
+.bd .ct .b .rb .yiyi {
+    width: 850px;
+    height: 180px;
+    position: relative;
+    top: 80px;
+    border-bottom: rgba(1, 1, 1, .3) solid 1px;
+    margin: 0 auto;
+}
+
+.bd .ct .b .rb .yiyi img {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+}
+
+.bd .ct .b .rb .yiyi h3 {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    font-size: 20;
+    font-weight: 700;
+}
+
+.bd .ct .b .rb .yiyi h5 {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    font-weight: 700;
+    color: #24354b;
+}
+
+.bd .ct .b .rb .yiyi h4:nth-child(4) {
+    position: absolute;
+    top: 95px;
+    left: 250px;
+    font-weight: 700;
+    color: #24354b;
+}
+
+.bd .ct .b .rb .yiyi h4:nth-child(5) {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    color: red;
+}

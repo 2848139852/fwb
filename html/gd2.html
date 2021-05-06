@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #Bg {
+        position: absolute;
+        top: -120px;
+        left: 0px;
+    }
+    
+    .itemarea {
+        position: relative;
+        top: 200px;
+        left: -300px;
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+    }
+    
+    .itemarea .pic img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .itemarea .pic .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 150px;
+        height: 150px;
+        background-image: url(../img/move.png);
+        display: none;
+        opacity: 0.3;
+        cursor: pointer;
+    }
+    
+    .itemarea .detail {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 400px;
+        width: 400px;
+        height: 400px;
+        /* border: 1px #888 solid; */
+        background-image: url(../img/bdto4-1.png);
+        background-size: 267%;
+        z-index: 3;
+    }
+    
+    .Text {
+        z-index: 1;
+    }
+    
+    .Text2 {
+        z-index: 1;
+    }
+    
+    #Bg2 {
+        position: absolute;
+        top: 80px;
+        left: 420px;
+        width: 570px;
+        /* z-index:-1; */
+    }
+    
+    #Bg3 {
+        position: absolute;
+        top: 0px;
+        left: 410px;
+        /* z-index:-1; */
+    }
+    
+    .Text b {
+        position: absolute;
+        top: 6px;
+        left: 470px;
+        white-space: nowrap;
+    }
+    
+    .Text a {
+        position: absolute;
+        top: 40px;
+        left: 430px;
+        white-space: nowrap;
+        color: #CC3300;
+    }
+    
+    .Text2 #F1 {
+        position: absolute;
+        top: 300px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .Text2 #F2 {
+        position: absolute;
+        top: 334px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .Text2 #F3 {
+        position: absolute;
+        top: 368px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .Text2 #F4 {
+        position: absolute;
+        top: 410px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .Text2 #T1 {
+        position: absolute;
+        top: 402px;
+        left: 500px;
+        width: 80px;
+        height: 30px;
+        border: 1px white ridge ridge;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .Text3 #F5 {
+        position: absolute;
+        top: 400px;
+        white-space: nowrap;
+    }
+    
+    .Text3 #F6 {
+        position: absolute;
+        top: 400px;
+        left: 70px;
+        white-space: nowrap;
+    }
+    
+    .Button #B1 {
+        position: absolute;
+        top: 480px;
+        left: 430px;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(239, 95, 0);
+        border: 1px rgb(239, 95, 0) ridge ridge;
+        border-radius: 5px;
+        z-index: 1;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .Button #B2 {
+        position: absolute;
+        top: 480px;
+        left: 650px;
+        width: 150px;
+        height: 40px;
+        background-color: white;
+        border: 1px white ridge ridge;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+    }
+    /* 图片 */
+    
+    .Button #Bg4 {
+        position: absolute;
+        top: 492px;
+        left: 433px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    
+    .Button #Bg5 {
+        position: absolute;
+        top: 488px;
+        left: 652px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    
+    .itemarea .Car #C1 {
+        position: absolute;
+        top: -210px;
+        left: 800px;
+        width: 180px;
+        height: 50px;
+        background-color: white;
+        border: 1px white ridge ridge;
+        border-radius: 5px;
+        z-index: 1;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .itemarea .Car #Bg6 {
+        position: absolute;
+        top: -200px;
+        left: 805px;
+        height: 7%;
+        z-index: 3;
+        cursor: pointer;
+    }
+    
+    .itemarea .Btext #F1-1 {
+        position: absolute;
+        top: 95px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .itemarea .Btext #F1-2 {
+        position: absolute;
+        top: 120px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .itemarea .Btext #F1-3 {
+        position: absolute;
+        top: 170px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .itemarea .Btext #F1-4 {
+        position: absolute;
+        top: 210px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .itemarea .Btext #F1-5 {
+        position: absolute;
+        top: 250px;
+        left: 430px;
+        white-space: nowrap;
+    }
+    
+    .Page {
+        position: absolute;
+        top: -25px;
+        left: 0px;
+    }
+    
+    .Page a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .Page a:hover {
+        color: red;
+    }
+    
+    .top {
+        background-color: black;
+        width: 100%;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .top .top2 {
+        float: left;
+        margin: 0px 0px 0px 450px;
+        width: 200px;
+        height: 35px;
+    }
+    
+    .top .top2 h4:nth-child(1) {
+        display: inline;
+        color: #ff6700 !important;
+        font-size: 15px !important;
+        font-weight: bold;
+        line-height: 35px;
+        margin: 0 0px;
+    }
+    
+    .top .top3 {
+        float: left;
+        margin: 0px 150px;
+        width: 800px;
+        height: 35px;
+    }
+    
+    .top .top3 .tuuu {
+        padding: 0px 0px 0px 100px;
+        display: inline-block;
+        width: 300px;
+    }
+    
+    .top .top3 .tuuu h4:nth-child(1) {
+        display: inline-block;
+        color: #bfbfbf;
+        font-size: 12px;
+        line-height: 35px;
+        padding: 0 20px;
+    }
+    
+    .top .top3 .tuuu h4:nth-child(2) {
+        display: inline-block;
+        color: #bfbfbf;
+        font-size: 12px;
+        line-height: 35px;
+    }
+    
+    .top .top3 .tuuu h4:nth-child(3) {
+        display: inline-block;
+        color: #bfbfbf;
+        font-size: 12px;
+        line-height: 35px;
+        padding: 0 20px;
+    }
+    
+    .top .top3 .tuu {
+        display: inline-block;
+        margin: 0px 10px;
+        width: 200px;
+        height: 35px;
+        font-size: 18px !important;
+        color: #ff6700;
+        font-weight: bold;
+        line-height: 35px;
+    }
+    
+    @font-face {
+        font-family: 'icomoon';
+        src: url('../fonts/icomoon.eot?nt8hb6');
+        src: url('../fonts/icomoon.eot?nt8hb6#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?nt8hb6') format('truetype'), url('../fonts/icomoon.woff?nt8hb6') format('woff'), url('../fonts/icomoon.svg?nt8hb6#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+    
+    .top .top3 .tu span {
+        font-family: 'icomoon';
+        padding: 0 10px;
+    }
+    
+    .top .top3 .tuu span {
+        font-family: 'icomoon';
+        padding: 0 10px;
+    }
+</style>
+
+<body>
+
+    <div class="top">
+        <div class="top2">
+            <!-- <h4>欢迎光临青梗农业！</h4> -->
+            <h4>共享租车连锁品牌</h4>
+        </div>
+        <div class="top3">
+            <!-- <div class="tu"><span></span>手机版</div> -->
+            <div class="tuuu">
+                <a href="../html/car.html">
+                    <h4>返回租聘</h4>
+                </a>
+                <h4>加入收藏</h4>
+                <h4>帮助中心</h4>
+            </div>
+            <div class="tuu"><span></span>110-119-1000</div>
+        </div>
+    </div>
+    <div class="itemarea">
+        <div class="pic">
+            <img src="../img/bdto4-1.png" alt="">
+            <div class="cover"></div>
+        </div>
+
+        <div>
+            <img id="Bg" src="../img/background.png" alt="">
+            <img id="Bg2" src="../img/background2.png" alt="">
+            <img id="Bg3" src="../img/background3.png" alt="">
+        </div>
+
+        <div class="detail">
+        </div>
+
+        <div class="Text">
+            <b>水稻收割机</b>
+            <a href="index4.html">双11优惠，全场8.88折</a>
+        </div>
+
+        <div class="Btext">
+            <font size="2" id="F1-1">市&nbsp;场&nbsp;价:&nbsp;&nbsp;&nbsp;<s>999.99</s></font>
+            <font size="2" id="F1-2">抢&nbsp;购&nbsp;价:&nbsp;&nbsp;&nbsp;
+                <h1 style="display: inline; color: red;">¥3100/月</h1>
+            </font>
+            <font size="2" id="F1-3">优&nbsp;惠&nbsp;券:&nbsp;&nbsp;&nbsp;无</font>
+            <font size="2" id="F1-4">特惠活动:&nbsp;&nbsp;&nbsp;无</font>
+            <font size="2" id="F1-5">积分信息:&nbsp;&nbsp;&nbsp;<a style="color: red;">购买可得25积分</a></font>
+        </div>
+
+        <div class="Text2">
+            <font size="2" id="F1">通用名称:&nbsp;&nbsp;&nbsp;水稻收割机</font>
+            <font size="2" id="F2">产品编号:&nbsp;&nbsp;&nbsp;2848139852</font>
+            <font size="2" id="F3">生产厂家:&nbsp;&nbsp;&nbsp;中国</font>
+            <font size="2" id="F4">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量:</font>
+            <input id="T1" type="text" name="number " value="">
+        </div>
+
+        <div class="Button">
+            <!-- <button id="B1"></button> -->
+            <input id="B1" type="button" name="Consulting" value="在线咨询">
+            <input id="B2" type="button" name="Join" value="租聘">
+            <img id="Bg4" src="../img/5.png" alt="">
+            <img id="Bg5" src="../img/6.png" alt="">
+        </div>
+
+        <div class="Text3">
+            <font size="2" color="red" id="F5">温馨提示：</font>
+            <font size="2" color="black" id="F6">图片仅供参考</font>
+        </div>
+
+        <!-- <div class="Car">
+            <input id="C1" type="button" name="Car " value="购物车数量0">
+            <img id="Bg6" src="../img/7.png" alt="">
+        </div> -->
+
+        <div class="Page">
+            <a href="car.html" style="text-decoration: none;">大量租聘&gt;</a>
+            <a href="gd.html" style="text-decoration: none;">水稻收割机</a>
+        </div>
+    </div>
+    <script>
+        var img = document.querySelector(".pic img"),
+            pic = document.querySelector('.itemarea .pic'),
+            cover = document.querySelector('.cover'),
+            detail = document.querySelector('.detail'),
+            itemarea = document.querySelector('.itemarea');
+
+        //鼠标进入
+        pic.onmouseenter = function() {
+            detail.style.display = 'block';
+            cover.style.display = 'block';
+        };
+        //鼠标离开
+        pic.onmouseleave = function() {
+            detail.style.display = 'none';
+            cover.style.display = 'none';
+        };
+
+
+        pic.addEventListener('mousemove', function(e) {
+            var x = e.clientX,
+                y = e.clientY;
+            var cx = pic.getBoundingClientRect().left,
+                cy = pic.getBoundingClientRect().top;
+            var tx = x - cx - 75,
+                ty = y - cy - 75;
+
+            if (tx < 0) {
+                tx = 0;
+            }
+            if (ty < 0) {
+                ty = 0;
+            }
+            if (tx > itemarea.offsetWidth - cover.offsetWidth - 1) {
+                tx = itemarea.offsetWidth - cover.offsetWidth - 1;
+            }
+            if (ty > img.offsetHeight - cover.offsetHeight - 1) {
+                ty = img.offsetHeight - cover.offsetHeight - 1;
+            }
+
+            detail.style.backgroundPosition = tx / 250 * 100 + '%' + ty / 250 * 100 + '%';
+            cover.style.left = tx + 'px';
+            cover.style.top = ty + 'px';
+
+        })
+    </script>
+</body>
+
+</html>

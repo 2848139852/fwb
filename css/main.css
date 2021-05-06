@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(245, 245, 245, .3);
+    z-index: 3;
+}
+
+.tbg .logo {
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    line-height: 90px;
+}
+
+.tbg .logo :first-child {
+    font-size: 40px;
+    font-weight: 700;
+    color: green;
+}
+
+.tbg .logo :last-child {
+    font-size: 35px;
+    font-weight: 700;
+    color: green;
+}
+
+.tbg .nav {
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    border: orchid solid 0px;
+}
+
+.tbg .nav ul li {
+    display: inline;
+    line-height: 105px;
+    margin: 25px;
+    padding-bottom: 23px;
+    font-weight: 700;
+}
+
+.tbg .nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #24354b;
+}
+
+.tbg .nav ul li a:hover {
+    color: red;
+}
+
+.tbg .nav ul li:first-child {
+    font-weight: 700;
+    border-bottom: 4px solid red;
+}
+
+.tbg .nav ul .diy a {
+    color: red;
+}
+
+.focus {
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+    margin: 0px auto;
+    z-index: 2;
+}
+
+.carousel,
+.carousel img {
+    width: 100%;
+    height: 500px!important;
+}
+
+.bd {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background-color: white;
+}
+
+.bd .bdtop {
+    margin: 150px auto;
+    width: 750px;
+    height: 150px;
+    /* background-color: tomato; */
+}
+
+.bd .bdtop div:first-child {
+    text-align: center;
+    line-height: 75px;
+    height: 75px;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    text-shadow: -4px 4px 2px silver;
+}
+
+.bd .bdtop div:last-child {
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    font-size: 40px;
+    font-weight: 700;
+    color: red;
+    text-shadow: -4px 4px 2px silver;
+}
+
+.bd .bdbd {
+    position: relative;
+    margin: 0 auto;
+    top: -50px;
+    width: 1200px;
+    height: 180px;
+}
+
+.bd .bdbd div {
+    display: inline;
+}
+
+.bd .bdbd div:last-child {
+    position: absolute;
+    right: 0px;
+}
+
+.bd .bdbd .bdbdd {
+    position: absolute;
+    left: 490px;
+    top: 10px;
+}
+
+.bd .w {
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    height: 470px;
+    width: 1200px;
+    border-radius: 10px;
+    background-color: tan;
+}
+
+.bd .w .main {
+    width: 1200px;
+    height: 470px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.bd .w .main .focus2 {
+    position: relative;
+    width: 1200px;
+    height: 470px;
+    background-color: purple;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bd .w .main .focus2 ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.bd .w .main .focus2 ul li {
+    float: left;
+}
+
+.bd .w .main .circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.bd .w .main .circle li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    /*background-color: #fff;*/
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.bd .w .main .focus2 ul li a img {
+    width: 1200px;
+    height: 470px!important;
+    border-radius: 10px;
+}
+
+.rob {
+    height: 650px;
+    background-color: #F6F6F6;
+}
+
+.rob .box {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 150px;
+    /* background-color: tomato; */
+}
+
+.rob .box div:first-child {
+    float: left;
+}
+
+.rob .box div:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    font-weight: 700;
+}
+
+.rob .boxx {
+    margin: 70px auto;
+    width: 1200px;
+    height: 400px;
+}
+
+.rob .boxx div {
+    float: left;
+    margin-left: 20px;
+    width: 280px;
+    height: 360px;
+    /* position: relative; */
+    background-color: white;
+}
+
+.rob .boxx div img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.rob .boxx div div:nth-child(2) {
+    margin: 10px 30px;
+    position: relative;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rob .boxx div div:nth-child(3) {
+    width: 220px;
+    height: 40px;
+    margin: 0 30px;
+    text-align: center;
+    color: block;
+    font-weight: 700;
+}
+
+.rob .boxx div div:nth-child(4) {
+    margin: 15px 80px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.rob .boxx div div:nth-child(4) a {
+    text-decoration: none;
+}
+
+.dd {
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/bbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* filter: blur(3px);
+    opacity: 0.5; */
+    perspective: 800px;
+    position: relative;
+    top: -20px;
+}
+
+.dd .box {
+    position: relative;
+    top: 50px;
+    margin: 10px auto;
+    width: 1200px;
+    height: 150px;
+}
+
+.dd .box div:first-child h4 {
+    font-size: 32px;
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #1C242D;
+    font-weight: 700;
+}
+
+.dd .box div:nth-child(2) {
+    float: left;
+    margin: 24px 0 0;
+}
+
+.dd .box .hh h5:nth-child(1) {
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: normal;
+}
+
+.dd .box .hh h5:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    font-size: 8px;
+    color: #4D4D4D;
+    font-weight: normal;
+    font-weight: 700;
+}
+
+.dd section {
+    margin: 70px auto;
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.dd section div {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 280px;
+    height: 360px;
+    background-color: white;
+}
+
+.dd section .a1 {
+    animation: move1 12s linear infinite;
+}
+
+.dd section .a2 {
+    animation: move2 12s linear infinite;
+}
+
+.dd section .a3 {
+    animation: move3 12s linear infinite;
+}
+
+.dd section div img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.dd section div div:nth-child(2) {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    font-weight: 700;
+}
+
+.dd section div div:nth-child(3) {
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    width: 220px;
+    height: 40px;
+    margin: 0 30px;
+    text-align: center;
+    color: block;
+    font-weight: 700;
+}
+
+.dd section div div:nth-child(4) {
+    position: absolute;
+    left: 0px;
+    top: 290px;
+    margin: 0px 80px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.dd section div div:nth-child(4) a {
+    text-decoration: none;
+}
+
+.dd section .a1 {
+    transform: translateX(0px);
+}
+
+@keyframes move1 {
+    0% {
+        /* transform: translateZ(120px);
+        transform: translateX(0px); */
+    }
+    16.7% {
+        transform: translateX(0px);
+        transform: translateZ(150px);
+    }
+    33.3% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.dd section .a2 {
+    transform: translateX(300px);
+}
+
+@keyframes move2 {
+    0% {
+        /* transform: translateZ(120px);
+        transform: translateX(0px); */
+    }
+    33.3% {
+        transform: translateX(300px);
+    }
+    50% {
+        transform: translateX(300px);
+        transform: translateZ(150px);
+    }
+    66.7% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+.dd section .a3 {
+    transform: translateX(-300px);
+}
+
+@keyframes move3 {
+    0% {
+        /* transform: translateZ(120px);
+        transform: translateX(0px); */
+    }
+    66.7% {
+        transform: translateX(-300px);
+    }
+    83.3% {
+        transform: translateX(-300px);
+        transform: translateZ(150px);
+    }
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+.news {
+    height: 1650px;
+    background-color: white;
+}
+
+.news .box {
+    position: relative;
+    top: 50px;
+    margin: 10px auto;
+    width: 1200px;
+    height: 150px;
+}
+
+.news .box div:first-child h4 {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #1C242D;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.news .box div:nth-child(2) {
+    float: left;
+    margin: 24px 0 0;
+}
+
+.news .box div:nth-child(2) h5:nth-child(1) {
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: normal;
+}
+
+.news .box div:nth-child(2) h5:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    font-size: 8px;
+    color: #4D4D4D;
+    font-weight: normal;
+    font-weight: 700;
+}
+
+.news .boxx {
+    margin: 70px auto 20px;
+    width: 1200px;
+    height: 400px;
+}
+
+.news .boxx div {
+    float: left;
+    margin-left: 20px;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.news .boxx div img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.news .boxx div .boxxx {
+    display: block;
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    top: 360px;
+    margin-left: 0px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.news .boxx div .boxxx h4 {
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.news .boxx div .boxxx h4 a {
+    text-decoration: none;
+    color: white;
+}
+
+.news .boxx div .boxxx h4 a:hover {
+    color: red;
+}
+
+.news .boxb {
+    margin: 0px auto;
+    width: 1200px;
+    height: 300px;
+}
+
+.news .boxb div {
+    float: left;
+    margin: 36px 4px 0px 20px;
+    width: 48%;
+    position: relative;
+}
+
+.news .boxb div a {
+    float: left;
+    width: 70.5%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.news .boxb div span {
+    float: right;
+    width: 29.5%;
+    color: #989898;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: 700;
+}
+
+.news .boxb div a h4 {
+    font-size: 16px;
+    line-height: 16px;
+    color: #1D242E;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.news .boxb div a h4:hover {
+    color: red;
+}
+
+.news .boxb div a h6 {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #989898;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 12px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.news .bott {
+    margin: 100px auto;
+    width: 1200px;
+    height: 500px;
+    position: relative;
+}
+
+.news .bott img {
+    margin: 0 0 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.news .bott .qq {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    height: 200px;
+}
+
+.news .bott .qq h2 {
+    color: white;
+    font-size: 60px;
+    font-family: 'KaiTi';
+    font-weight: 700;
+}
+
+.news .bott .qq div {
+    margin: 36px 40px 0 0;
+    width: 180px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.news .bott .qq div h4 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    margin: 0 0;
+    font-weight: 700;
+}
+
+.city {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(246, 246, 246);
+    padding-top: 50px;
+}
+
+.city div {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+    height: 250px;
+    /* background-color: red; */
+}
+
+.city div h2 {
+    font-size: 32px;
+    color: #1D252E;
+    margin-bottom: 36px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: 700;
+}
+
+.city div ul li {
+    /* list-style: none; */
+    /* white-space: nowrap; */
+    display: inline;
+    background-color: white;
+    font-family: "Microsoft YaHei", sans-serif;
+    cursor: default;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 3px 15px;
+    border-radius: 16px;
+    color: #1D252E;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.city div ul li:nth-child(4) {
+    background-color: red;
+}
+
+.city div .by ul li {
+    display: inline;
+    background-color: rgb(246, 246, 246);
+    font-family: "Microsoft YaHei", sans-serif;
+    cursor: default;
+    /* float: left; */
+    position: relative;
+    top: 30px;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 3px 15px;
+    border-radius: 16px;
+    color: #1D252E;
+    transition: .3s;
+}
+
+.bottom {
+    background-color: #767271;
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.bottom div {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.bottom div div {
+    float: left;
+    width: 700px;
+}
+
+.bottom div img {
+    float: right;
+    margin-top: -30px;
+}
+
+.bottom div div ul li {
+    float: left;
+    list-style: none;
+    margin-right: 80px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 6px;
+    color: white;
+}
+
+.bottom div div h2 {
+    color: #EEEDEB;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 30px;
+}

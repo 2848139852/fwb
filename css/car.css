@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(245, 245, 245, .3);
+    z-index: 3;
+}
+
+.tbg .logo {
+    position: absolute;
+    left: 20%;
+    line-height: 90px;
+}
+
+.tbg .logo :first-child {
+    font-size: 40px;
+    font-weight: 700;
+    color: green;
+}
+
+.tbg .logo :last-child {
+    font-size: 35px;
+    font-weight: 700;
+    color: green;
+}
+
+.tbg .nav {
+    position: absolute;
+    left: 35%;
+}
+
+.tbg .nav ul li {
+    display: inline;
+    line-height: 105px;
+    margin: 25px;
+    padding-bottom: 23px;
+    font-weight: 700;
+}
+
+.tbg .nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #24354b;
+}
+
+.tbg .nav ul li a:hover {
+    color: red;
+}
+
+.tbg .nav ul li:nth-child(3) {
+    font-weight: 700;
+    border-bottom: 4px solid red;
+}
+
+.focus {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: pink;
+    margin: 0px auto;
+    z-index: 2;
+}
+
+.carousel,
+.carousel img {
+    width: 100%;
+    height: 520px!important;
+}
+
+.rob {
+    height: 2250px;
+    background-color: rgb(246, 246, 246);
+}
+
+.rob .box {
+    position: relative;
+    top: 150px;
+    margin: 10px auto;
+    width: 1200px;
+    height: 150px;
+}
+
+.rob .box div:first-child h4 {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #1C242D;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rob .box div:nth-child(2) {
+    float: left;
+    margin: 24px 0 0;
+}
+
+.rob .box div:nth-child(2) h5:nth-child(1) {
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+.rob .box div:nth-child(2) h5:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    font-size: 8px;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+.rob .boxx {
+    margin: 170px auto;
+    width: 1200px;
+    height: 300px;
+}
+
+.rob .boxx div {
+    float: left;
+    margin-left: 20px;
+    width: 280px;
+    height: 360px;
+    /* position: relative; */
+    background-color: white;
+}
+
+.rob .boxx div img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.rob .boxx div div:nth-child(2) {
+    margin: 20px 30px;
+    position: relative;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rob .boxx div div:nth-child(3) {
+    width: 220px;
+    height: 40px;
+    margin: 0 30px;
+    text-align: center;
+    color: block;
+    font-weight: 700;
+}
+
+.rob .boxx div div:nth-child(4) {
+    margin: 5px 80px 15px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.rob .boxx div div:nth-child(4) a {
+    text-decoration: none;
+    color: black;
+}
+
+.rob .boxx div div:nth-child(4) a:hover {
+    color: red;
+}
+
+.rob .box2 {
+    position: relative;
+    top: 50px;
+    margin: 10px auto;
+    width: 1200px;
+    height: 150px;
+}
+
+.rob .box2 div:first-child h4 {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #1C242D;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rob .box2 div:nth-child(2) {
+    float: left;
+    margin: 24px 0 0;
+}
+
+.rob .box2 div:nth-child(2) h5:nth-child(1) {
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+.rob .box2 div:nth-child(2) h5:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    font-size: 8px;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+.rob .boxx2 {
+    margin: 70px auto;
+    width: 1200px;
+    height: 300px;
+}
+
+.rob .boxx2 div {
+    float: left;
+    margin-left: 20px;
+    width: 280px;
+    height: 360px;
+    /* position: relative; */
+    background-color: white;
+}
+
+.rob .boxx2 div img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.rob .boxx2 div div:nth-child(2) {
+    margin: 20px 30px;
+    position: relative;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rob .boxx2 div div:nth-child(3) {
+    width: 220px;
+    height: 40px;
+    margin: 0 30px;
+    text-align: center;
+    color: block;
+    font-weight: 700;
+}
+
+.rob .boxx2 div div:nth-child(4) {
+    margin: 5px 80px 15px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.rob .boxx2 div div:nth-child(4) a {
+    text-decoration: none;
+    color: black;
+}
+
+.rob .boxx2 div div:nth-child(4) a:hover {
+    color: red;
+}
+
+.rob .box3 {
+    position: relative;
+    top: 150px;
+    margin: 10px auto;
+    width: 1200px;
+    height: 150px;
+}
+
+.rob .box3 div:first-child h4 {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #1C242D;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rob .box3 div:nth-child(2) {
+    float: left;
+    margin: 24px 0 0;
+}
+
+.rob .box3 div:nth-child(2) h5:nth-child(1) {
+    font-size: 16px;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+.rob .box3 div:nth-child(2) h5:nth-child(2) {
+    position: absolute;
+    right: 30px;
+    font-size: 8px;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+.rob .boxx3 {
+    margin: 170px auto;
+    width: 1200px;
+    height: 300px;
+}
+
+.rob .boxx3 div {
+    float: left;
+    margin-left: 20px;
+    width: 280px;
+    height: 360px;
+    /* position: relative; */
+    background-color: white;
+}
+
+.rob .boxx3 div img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.rob .boxx3 div div:nth-child(2) {
+    margin: 20px 30px;
+    position: relative;
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rob .boxx3 div div:nth-child(3) {
+    width: 220px;
+    height: 40px;
+    margin: 0 30px;
+    text-align: center;
+    color: block;
+    font-weight: 700;
+}
+
+.rob .boxx3 div div:nth-child(4) {
+    margin: 5px 80px 15px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.rob .boxx3 div div:nth-child(4) a {
+    text-decoration: none;
+    color: black;
+}
+
+.rob .boxx3 div div:nth-child(4) a:hover {
+    color: red;
+}
+
+.bottom {
+    background-color: #767271;
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.bottom div {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.bottom div div {
+    float: left;
+    width: 700px;
+}
+
+.bottom div img {
+    float: right;
+    margin-top: -30px;
+}
+
+.bottom div div ul li {
+    float: left;
+    list-style: none;
+    margin-right: 80px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 6px;
+    color: white;
+}
+
+.bottom div div h2 {
+    color: #EEEDEB;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 30px;
+}
